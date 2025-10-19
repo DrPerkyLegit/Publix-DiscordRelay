@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Project>
+	<PropertyGroup>
+		<NitroxServerA>C:\Users\PeakB\Desktop\Nitrox\Nitrox.Server.Subnautica\bin\Debug\net9.0</NitroxServerA>
+
+		<NitroxServer Condition="Exists('$(NitroxServerA)')">$(NitroxServerA)</NitroxServer>
+
+		<LibPath>$(NitroxServer)\lib</LibPath>
+		<PluginsPath>$(NitroxServer)\plugins</PluginsPath>
+
+	</PropertyGroup>
+</Project>

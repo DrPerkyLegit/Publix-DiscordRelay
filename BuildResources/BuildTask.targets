@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Project>
+	<Target Name="CopyToNitrox" AfterTargets="Build" Condition="'$(CI)'!='TRUE'">
+		<Error Condition="'$(NitroxServer)' == ''" Text="NitroxServer Root Folder Is Not Valid" />
+		<Error Condition="'$(PluginsPath)' == ''" Text="Plugins Folder Is Not Valid" />
+
+		<Copy SourceFiles="$(TargetPath)" DestinationFiles="$(PluginsPath)\$(TargetFileName)" />
+		<Message Text="Copied To Plugins Folder" Importance="high"/>
+	</Target>
+</Project>

@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <RootNamespace>Publix_ExamplePlugin</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+
+	<Import Project="BuildResources\BuildPaths.props" />
+	<Import Project="BuildResources\BuildTask.targets" />
+
+	<ItemGroup>
+		<Reference Include="Nitrox-PublixExtension">
+			<HintPath>$(NitroxServer)\Nitrox-PublixExtension.dll</HintPath>
+		</Reference>
+		<Reference Include="NitroxModel">
+			<HintPath>$(LibPath)\NitroxModel.dll</HintPath>
+		</Reference>
+		<Reference Include="NitroxServer">
+			<HintPath>$(LibPath)\NitroxServer.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+
+</Project>
