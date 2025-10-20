@@ -15,11 +15,14 @@
 		<Reference Include="Nitrox-PublixExtension">
 			<HintPath>$(NitroxServer)\Nitrox-PublixExtension.dll</HintPath>
 		</Reference>
-		<Reference Include="NitroxModel">
-			<HintPath>$(LibPath)\NitroxModel.dll</HintPath>
+		<Reference Include="Nitrox.Server.Subnautica">
+			<HintPath>$(NitroxServer)\Nitrox.Server.Subnautica.dll</HintPath>
 		</Reference>
-		<Reference Include="NitroxServer">
-			<HintPath>$(LibPath)\NitroxServer.dll</HintPath>
+		<Reference Include="Nitrox.Model.Subnautica">
+			<HintPath>$(LibPath)\Nitrox.Model.Subnautica.dll</HintPath>
+		</Reference>
+		<Reference Include="Nitrox.Model">
+			<HintPath>$(LibPath)\Nitrox.Model.dll</HintPath>
 		</Reference>
 	</ItemGroup>
 

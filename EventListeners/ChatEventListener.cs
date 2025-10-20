@@ -1,10 +1,9 @@
-﻿using Nitrox_PublixExtension.Core;
+﻿using Nitrox.Model.Subnautica.Packets;
+using Nitrox.Server.Subnautica;
+using Nitrox_PublixExtension.Core;
 using Nitrox_PublixExtension.Core.Events;
 using Nitrox_PublixExtension.Core.Events.Attributes;
 using Nitrox_PublixExtension.Core.Events.Base;
-using NitroxModel.Logger;
-using NitroxServer;
-using NitroxServer.Communication;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,13 +21,13 @@ namespace Publix_DiscordRelayPlugin.EventListeners
         }
 
         [ListenerMethod(ListenerType.PacketRecieved)]
-        public void OnPlayerChatMessage(Event ev, Player player, NitroxModel.Packets.ChatMessage packet)
+        public void OnPlayerChatMessage(Event ev, Player player, ChatMessage packet)
         {
             plugin.SendChatMessage(player.Name, packet.Text);
         }
 
         [ListenerMethod(ListenerType.PacketSentAll)]
-        public void OnServerChatMessage(Event ev, NitroxModel.Packets.ChatMessage packet)
+        public void OnServerChatMessage(Event ev, ChatMessage packet)
         {
             if (packet.PlayerId == ushort.MaxValue)
             {

@@ -1,4 +1,4 @@
-﻿using NitroxModel.Logger;
+﻿using Nitrox.Model.Logger;
 using System;
 using System.Net.Http;
 using System.Net.WebSockets;

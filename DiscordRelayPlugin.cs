@@ -1,8 +1,8 @@
-﻿using Nitrox_PublixExtension.Core;
+﻿using Nitrox.Model.Logger;
+using Nitrox.Model.Subnautica.Packets;
+using Nitrox_PublixExtension.Core;
 using Nitrox_PublixExtension.Core.Plugin;
 using Nitrox_PublixExtension.Core.Plugin.Attributes;
-using NitroxModel.Logger;
-using NitroxModel.Packets;
 using Publix_DiscordRelayPlugin;
 using Publix_DiscordRelayPlugin.EventListeners;
 
@@ -116,7 +116,7 @@ namespace Publix_DiscordRelayPlugin
                 int ConnectedPlayers = Publix.getPlayerManager().internalPlayerManager.GetConnectedPlayers().Count;
                 int MaxPlayers = Publix.GetSubnauticaServerConfig().MaxConnections;
 
-                Log.Info($"{ConnectedPlayers}/{MaxPlayers} Survivors");
+                //Log.Info($"{ConnectedPlayers}/{MaxPlayers} Survivors");
 
                 bot.SetActivityAndStatus($"{ConnectedPlayers}/{MaxPlayers} Survivors", "online", 3, DateTimeOffset.UtcNow.ToUnixTimeMilliseconds() - startTime);
             } catch
