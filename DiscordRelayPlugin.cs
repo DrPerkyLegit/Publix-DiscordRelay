@@ -1,8 +1,7 @@
-﻿using Nitrox.Model.Logger;
-using Nitrox.Model.Subnautica.Packets;
-using Nitrox_PublixExtension.Core;
+﻿using Nitrox_PublixExtension.Core;
 using Nitrox_PublixExtension.Core.Plugin;
 using Nitrox_PublixExtension.Core.Plugin.Attributes;
+using NitroxModel.Packets;
 using Publix_DiscordRelayPlugin;
 using Publix_DiscordRelayPlugin.EventListeners;
 

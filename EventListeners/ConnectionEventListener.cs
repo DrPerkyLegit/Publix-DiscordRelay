@@ -1,9 +1,9 @@
-﻿using Nitrox.Model.Subnautica.Packets;
-using Nitrox.Server.Subnautica;
-using Nitrox_PublixExtension.Core;
+﻿using Nitrox_PublixExtension.Core;
 using Nitrox_PublixExtension.Core.Events;
 using Nitrox_PublixExtension.Core.Events.Attributes;
 using Nitrox_PublixExtension.Core.Events.Base;
+using NitroxModel.Packets;
+using NitroxServer;
 using System;
 using System.Collections.Generic;
 using System.Linq;
